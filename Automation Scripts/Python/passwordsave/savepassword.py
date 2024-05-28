@@ -9,3 +9,21 @@
 
 
 
+pass_dict = {
+	"gmail" : "password1",
+	"bank" : "password2",
+	"yahoo" : "password3"
+
+}
+
+def get_password(user_input):
+	if user_input in pass_dict:
+		return pass_dict[user_input]
+	else:
+		return False
+
+
+user_input = input("Which password: ")
+
+x = get_password(user_input)
+print(x)
