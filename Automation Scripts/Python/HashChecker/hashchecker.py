@@ -40,4 +40,9 @@ def hashtype():
     if sys.argv[2] == 'md5':
         print(md5match(md5checksum(sys.argv[1])))
 
-r = hashtype()
+
+def main():
+    if len(sys.argv) <= 2:
+        print("\n\n\nUsage \n\n Example: python3 hashchecker.py <file Location to be checked> <type sha256 or md5> <hash to be verifed>\n\n\n\n")
+main()
+# r = hashtype()
