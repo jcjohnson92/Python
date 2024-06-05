@@ -7,4 +7,4 @@ parser.add_argument('-s', help="speak of times to meow", type=str)
 args = parser.parse_args()
 
 for _ in range(int(args.n)):
-    print(str(args.s))
+    print(args.s)
