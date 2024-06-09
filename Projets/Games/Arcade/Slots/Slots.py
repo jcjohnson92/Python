@@ -69,11 +69,12 @@ def main():
             break
         spin_again= input("Do you wish to spin again [Y/N]: ").upper()
         
-        if spin_again == 'Y':
-            continue
-        else:
+        if spin_again != 'Y':
             break
 
+    print("************************************************")
+    print(f"Game over, withdrawing {deposit}")
+    print("************************************************")
 
 if __name__ == "__main__":
     main()
