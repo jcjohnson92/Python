@@ -16,14 +16,15 @@ def file_creation(path, filename, program, user):
     if program == '.html':
         file_extension = program
         print(f"Creating {file_extension}")
+        # Create html File
         html = open(path + "/" + filename + "/" + filename + file_extension, 'w')
         html.write(x)
         html.close()
-
+        # Create CSS file
         css = open(path + "/" + filename + "/" + "style.css", 'w')
         css.write(x)
         css.close()
-
+        # Create Javascript file
         js = open(path + "/" + filename + "/" + "js.js", 'w')
         js.write(x)
         js.close()
