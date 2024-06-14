@@ -1,0 +1,21 @@
+{% extends "layouts.html" %}
+
+
+{% block body %}
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Sport</th>
+        </thead>
+        <tbody>
+            {% for name,sport in registrants.items() %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ sport }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table> 
+{% endblock %}

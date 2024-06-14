@@ -1,0 +1,12 @@
+{% extends "layouts.html" %}
+
+
+{% block body %}
+
+<h1>{{name}} You are register for 
+    {% for sport in sports %}
+    {{sport}}
+
+    {% endfor %}
+</h1>
+{% endblock %}
